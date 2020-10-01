@@ -31,9 +31,12 @@
         </p>
 
         <div class="description__advantages">
-          <button class="order-btn order-btn_description">
-            Получить расчёт и план
-          </button>
+          <div class="order-btn-container order-btn-container_description">
+            <button class="order-btn">
+              Получить расчёт и план
+            </button>
+            <div class="order-btn-shadow"></div>
+          </div>
           <div class="description__tabs">
             <div class="description__tab">Срок открытия: 2 месяца</div>
             <div class="description__tab">Собственных точек: 18</div>
@@ -87,7 +90,12 @@
           </div>
         </div>
 
-        <button class="order-btn order-btn_search">Получить анализ</button>
+        <div class="order-btn-container order-btn-container_search">
+          <button class="order-btn">
+            Получить расчёт и план
+          </button>
+          <div class="order-btn-shadow"></div>
+        </div>
       </div>
     </section>
 
@@ -98,7 +106,9 @@
         <div class="calc__column-container">
           <div class="calc__column">
             <div class="calc__stat-row">
-              <div class="calc__stat-text">Среднее количество чеков в месяц</div>
+              <div class="calc__stat-text">
+                Среднее количество чеков в месяц
+              </div>
               <div class="calc__stat-number">4 000</div>
             </div>
             <div class="calc__stat-row">
@@ -127,27 +137,46 @@
             <div class="calc__input-radio-container">
               <p class="calc__input-radio-caption">Формат:</p>
               <div class="calc__input-radio-box">
-                <input class="calc__input-radio" id="fudkort" type="radio" name="format" value="fudkort">
-                <label class="calc__input-radio-label" for="fudkort">Фудкорт</label>
+                <input
+                  class="calc__input-radio"
+                  id="fudkort"
+                  type="radio"
+                  name="format"
+                  value="fudkort"
+                />
+                <label class="calc__input-radio-label" for="fudkort"
+                  >Фудкорт</label
+                >
               </div>
               <div class="calc__input-radio-box">
-                <input class="calc__input-radio" id="cafe" type="radio" name="format" value="cafe">
-                <label class="calc__input-radio-label" for="cafe">Семейное кафе</label>
+                <input
+                  class="calc__input-radio"
+                  id="cafe"
+                  type="radio"
+                  name="format"
+                  value="cafe"
+                />
+                <label class="calc__input-radio-label" for="cafe"
+                  >Семейное кафе</label
+                >
               </div>
             </div>
             <div class="calc__stat-row">
               <div class="calc__stat-text">Средний чек</div>
-              <div class="calc__stat-number">600 ₽</div>
+              <div class="calc__stat-number" id="check-label">600 ₽</div>
+              <input type="range" min="0" max="100" step="10" id="check-range-input" class="calc__input-range" />
             </div>
-            <input type="range" class="calc__input-range">
             <div class="calc__stat-row">
-              <div class="calc__stat-text">Сколько месяцев вы работаете по франшизе</div>
-              <div class="calc__stat-number">12 месяцев</div>
+              <div class="calc__stat-text">
+                Сколько месяцев вы работаете по франшизе
+              </div>
+              <div class="calc__stat-number" id="month-label">12 месяцев</div>
+              <input type="range" min="0" max="100" step="25" id="month-range-input" class="calc__input-range" />
             </div>
-            <input type="range" class="calc__input-range">
-  
             <div class="calc__buy-box">
-              <div class="calc__buy-box-title">За это время в вашем кафе купят:</div>
+              <div class="calc__buy-box-title">
+                За это время в вашем кафе купят:
+              </div>
               <div class="calc__buy-box-list">
                 <div class="calc__buy-box-item">Пиццы — 1 992 штуки</div>
                 <div class="calc__buy-box-item">Салатов — 96 штук</div>
@@ -155,7 +184,9 @@
                 <div class="calc__buy-box-item">Десертов — 64 штуки</div>
                 <div class="calc__buy-box-item">Вторых блюд — 321 штук</div>
               </div>
-              <div class="calc__buy-box-result">Ваша чистая прибыль составит: 535 604 ₽</div>
+              <div class="calc__buy-box-result">
+                Ваша чистая прибыль составит: 535 604 ₽
+              </div>
             </div>
           </div>
         </div>
@@ -179,9 +210,12 @@
               placeholder="Ваше e-mail"
               class="calc__form-input"
             />
-            <button class="order-btn order-btn_calc">
-              Получить бизнес-план
-            </button>
+            <div class="order-btn-container order-btn-container_calc">
+              <button class="order-btn">
+                Получить расчёт и план
+              </button>
+              <div class="order-btn-shadow"></div>
+            </div>
           </form>
         </div>
       </div>
@@ -272,13 +306,27 @@
             </div>
           </div>
           <div class="stats__element">
-            <button class="order-btn">Стать частью команды</button>
+            <div class="order-btn-container">
+              <button class="order-btn">
+                Получить расчёт и план
+              </button>
+              <div class="order-btn-shadow"></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="cities">
+      <section class="slider">
+        <h1 class="slider__title">
+          Поможем открыть успешную пиццерию в любом регионе
+        </h1>
+        <div class="slider__container">
+          <button class="slider__prev"><img src="./img/icons/arrow.svg" alt=""></button>
+          <button class="slider__next"><img src="./img/icons/arrow.svg" alt=""></button>
+        </div>
+      </section>
       <div class="container">
         <h1 class="cities__title">
           Франчайзи PIZZAWOOD<br />
@@ -315,7 +363,12 @@
           </div>
         </div>
 
-        <button class="order-btn order-btn_cities">Стать частью команды</button>
+        <div class="order-btn-container order-btn-container_cities">
+          <button class="order-btn">
+            Получить расчёт и план
+          </button>
+          <div class="order-btn-shadow"></div>
+        </div>
       </div>
     </section>
 
@@ -353,9 +406,12 @@
                 placeholder="Ваш e-mail"
               />
             </div>
-            <button class="order-btn order-btn_contact-form">
-              Получить бизнес-план
-            </button>
+            <div class="order-btn-container order-btn-container_contact-form">
+              <button class="order-btn">
+                Получить расчёт и план
+              </button>
+              <div class="order-btn-shadow"></div>
+            </div>
             <p class="contact-form__text">
               Нажимая на кнопку «Получить», я даю согласие на обработку
               персональных данных и соглашаюсь
@@ -419,9 +475,12 @@
                 ><span class="format__stat-number">15 месяцев</span>
               </div>
             </div>
-            <button class="order-btn order-btn_format">
-              Получить бизнес-план
-            </button>
+            <div class="order-btn-container order-btn-container_format">
+              <button class="order-btn">
+                Получить расчёт и план
+              </button>
+              <div class="order-btn-shadow"></div>
+            </div>
           </div>
         </div>
         <div class="format__info-block">
@@ -471,9 +530,12 @@
                 ><span class="format__stat-number">13 месяцев</span>
               </div>
             </div>
-            <button class="order-btn order-btn_format">
-              Получить бизнес-план
-            </button>
+            <div class="order-btn-container order-btn-container_format">
+              <button class="order-btn">
+                Получить расчёт и план
+              </button>
+              <div class="order-btn-shadow"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -524,9 +586,12 @@
             </div>
           </div>
         </div>
-        <button class="order-btn order-btn_steps">
-          Получить план открытия
-        </button>
+        <div class="order-btn-container order-btn-container_steps">
+          <button class="order-btn">
+            Получить расчёт и план
+          </button>
+          <div class="order-btn-shadow"></div>
+        </div>
       </div>
     </section>
 
@@ -597,9 +662,12 @@
               геолокационные сервисы. Обучаем работе в соцсетях, помогаем
               наполнять их качественным контентом.
             </div>
-            <button class="order-btn order-btn_support">
-              Получить комплект документации 1/3
-            </button>
+            <div class="order-btn-container order-btn-container_support">
+              <button class="order-btn">
+                Получить расчёт и план
+              </button>
+              <div class="order-btn-shadow"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -694,9 +762,12 @@
                 placeholder="Ваш e-mail"
               />
             </div>
-            <button class="order-btn order-btn_contact-form">
-              Получить бизнес-план
-            </button>
+            <div class="order-btn-container order-btn-container_contact-form">
+              <button class="order-btn">
+                Получить расчёт и план
+              </button>
+              <div class="order-btn-shadow"></div>
+            </div>
             <p class="contact-form__text">
               Нажимая на кнопку «Получить», я даю согласие на обработку
               персональных данных и соглашаюсь
@@ -719,7 +790,11 @@
             >
           </div>
           <div class="footer__mobile-block">
-            <img src="./img/app-store.png" alt="" class="footer__app-store" /><img
+            <img
+              src="./img/app-store.png"
+              alt=""
+              class="footer__app-store"
+            /><img
               src="./img/google-play.png"
               alt=""
               class="footer__google-play"

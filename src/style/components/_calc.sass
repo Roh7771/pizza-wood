@@ -13,6 +13,7 @@
   &__column-container
     display: flex
     justify-content: space-between
+    margin-bottom: 80px
   &__column
     display: flex
     flex-direction: column
@@ -24,6 +25,7 @@
     border: 1px solid #E7E8EA 
     border-radius: 4px 4px 0px 0px
     margin-bottom: 20px
+    position: relative
     display: flex
     &:last-child
       margin-bottom: 0
@@ -112,21 +114,37 @@
       content: ""
       border-color: #F8CE4C
   &__input-range
-    margin-bottom: 20px
+    background: linear-gradient(to right, #F8CE4C 0%, #F8CE4C 50%, #E7E8EA 50%, #E7E8EA 100%)
+    border-radius: 8px
+    height: 2px
+    width: 100%
+    outline: none
+    position: absolute
+    bottom: 0px
+    transition: background 450ms ease-in
     -webkit-appearance: none
-    background-color: #F8CE4C
-    &::-webkit-slider-runnable-track
-      height: 3px
-      -webkit-appearance: none
-      color: #13bba4
-      overflow: hidden
     &::-webkit-slider-thumb
       width: 20px
       height: 20px
       -webkit-appearance: none
       cursor: pointer
-      background: #434343
-      box-shadow: -80px 0 0 80px #43e5f7
+      background: #FFFFFF
+      border: 2px solid #F8CE4C
+      border-radius: 50%
+    &::-moz-range-thumb
+      width: 20px
+      height: 20px
+      cursor: pointer
+      background: #FFFFFF
+      border: 2px solid #F8CE4C
+      border-radius: 50%
+    &::-ms-thumb
+      width: 20px
+      height: 20px
+      cursor: pointer
+      background: #FFFFFF
+      border: 2px solid #F8CE4C
+      border-radius: 50%
   &__buy-box
     width: 100%
     padding: 30px 0

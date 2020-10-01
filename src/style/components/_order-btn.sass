@@ -1,6 +1,7 @@
 .order-btn
-  height: 70px
   background: #F8CE4C
+  width: 100%
+  height: 100%
   border-radius: 4px
   font-weight: 600
   font-size: 18px
@@ -12,6 +13,21 @@
   display: flex
   align-items: center
   justify-content: center
+  position: relative
+  z-index: 2
+.order-btn-shadow
+  height: 70px
+  width: calc(100% - 1px)
+  background: #C7841F
+  border-radius: 10px
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  top: 4px
+  z-index: 1
+.order-btn-container
+  position: relative
+  height: 70px
   &_search
     width: 524px
   &_calc
