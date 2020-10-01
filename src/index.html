@@ -14,7 +14,7 @@
           </div>
           <div class="description__contants">
             <a class="description__phone" href="tel:+880000000"
-              >8 800 000 00 00</a
+              >8&nbsp800&nbsp000&nbsp00&nbsp00</a
             >
             <p class="description__phone-text">Бесплатная консультация</p>
           </div>
@@ -26,15 +26,13 @@
         </h1>
 
         <p class="description__text">
-          Начните зарабатывать 439 000 ₽ рублей <br />
+          Начните зарабатывать 439&nbsp000 ₽ рублей <br />
           в месяц с каждой точки
         </p>
 
         <div class="description__advantages">
           <div class="order-btn-container order-btn-container_description">
-            <button class="order-btn">
-              Получить расчёт и план
-            </button>
+            <button class="order-btn">Получить расчёт и план</button>
             <div class="order-btn-shadow"></div>
           </div>
           <div class="description__tabs">
@@ -91,9 +89,7 @@
         </div>
 
         <div class="order-btn-container order-btn-container_search">
-          <button class="order-btn">
-            Получить расчёт и план
-          </button>
+          <button class="order-btn">Получить расчёт и план</button>
           <div class="order-btn-shadow"></div>
         </div>
       </div>
@@ -109,28 +105,28 @@
               <div class="calc__stat-text">
                 Среднее количество чеков в месяц
               </div>
-              <div class="calc__stat-number">4 000</div>
+              <div class="calc__stat-number">4&nbsp000</div>
             </div>
             <div class="calc__stat-row">
               <div class="calc__stat-text">Средняя ежемесячная выручка</div>
-              <div class="calc__stat-number">1 400 600 ₽</div>
+              <div class="calc__stat-number">1&nbsp400&nbsp600 ₽</div>
             </div>
             <p class="calc__spend-caption">Расходы:</p>
             <div class="calc__stat-row">
               <div class="calc__stat-text">Средняя стоимость аренды</div>
-              <div class="calc__stat-number">400 000 ₽</div>
+              <div class="calc__stat-number">400&nbsp000 ₽</div>
             </div>
             <div class="calc__stat-row">
               <div class="calc__stat-text">Средняя зарплата сотрудников</div>
-              <div class="calc__stat-number">45 000 ₽</div>
+              <div class="calc__stat-number">45&nbsp000 ₽</div>
             </div>
             <div class="calc__stat-row">
               <div class="calc__stat-text">Закупка сырья</div>
-              <div class="calc__stat-number">1 400 600 ₽</div>
+              <div class="calc__stat-number">1&nbsp400&nbsp600 ₽</div>
             </div>
             <div class="calc__stat-row">
               <div class="calc__stat-text">Прочие расходы</div>
-              <div class="calc__stat-number">1 400 600 ₽</div>
+              <div class="calc__stat-number">1&nbsp400&nbsp600 ₽</div>
             </div>
           </div>
           <div class="calc__column">
@@ -164,28 +160,42 @@
             <div class="calc__stat-row">
               <div class="calc__stat-text">Средний чек</div>
               <div class="calc__stat-number" id="check-label">600 ₽</div>
-              <input type="range" min="0" max="100" step="10" id="check-range-input" class="calc__input-range" />
+              <input
+                type="range"
+                min="0"
+                max="100"
+                step="10"
+                id="check-range-input"
+                class="calc__input-range"
+              />
             </div>
             <div class="calc__stat-row">
               <div class="calc__stat-text">
                 Сколько месяцев вы работаете по франшизе
               </div>
               <div class="calc__stat-number" id="month-label">12 месяцев</div>
-              <input type="range" min="0" max="100" step="25" id="month-range-input" class="calc__input-range" />
+              <input
+                type="range"
+                min="0"
+                max="100"
+                step="25"
+                id="month-range-input"
+                class="calc__input-range"
+              />
             </div>
             <div class="calc__buy-box">
               <div class="calc__buy-box-title">
                 За это время в вашем кафе купят:
               </div>
               <div class="calc__buy-box-list">
-                <div class="calc__buy-box-item">Пиццы — 1 992 штуки</div>
+                <div class="calc__buy-box-item">Пиццы — 1&nbsp992 штуки</div>
                 <div class="calc__buy-box-item">Салатов — 96 штук</div>
                 <div class="calc__buy-box-item">Кофе — 802 стакана</div>
                 <div class="calc__buy-box-item">Десертов — 64 штуки</div>
                 <div class="calc__buy-box-item">Вторых блюд — 321 штук</div>
               </div>
               <div class="calc__buy-box-result">
-                Ваша чистая прибыль составит: 535 604 ₽
+                Ваша чистая прибыль составит: 535&nbsp604 ₽
               </div>
             </div>
           </div>
@@ -195,25 +205,44 @@
             Получите бизнес-план для выхода на прибыль 535 604 ₽
           </div>
           <form action="" class="calc__form">
-            <input
-              type="text"
-              placeholder="Ваше имя"
-              class="calc__form-input"
-            />
-            <input
-              type="text"
-              placeholder="Ваше телефон"
-              class="calc__form-input"
-            />
-            <input
-              type="text"
-              placeholder="Ваше e-mail"
-              class="calc__form-input"
-            />
+            <div class="calc__input-box">
+              <input
+                type="text"
+                placeholder="Ваше имя"
+                class="calc__form-input"
+                id="calc__name-input"
+              />
+              <div
+                class="calc__error-msg calc__error-msg_invisible"
+                id="calc__name-label"
+              ></div>
+            </div>
+            <div class="calc__input-box">
+              <input
+                type="text"
+                placeholder="Ваше телефон"
+                class="calc__form-input"
+                id="calc__phone-input"
+              />
+              <div
+                class="calc__error-msg calc__error-msg_invisible"
+                id="calc__phone-label"
+              ></div>
+            </div>
+            <div class="calc__input-box">
+              <input
+                type="text"
+                placeholder="Ваше e-mail"
+                class="calc__form-input"
+                id="calc__email-input"
+              />
+              <div
+                class="calc__error-msg calc__error-msg_invisible"
+                id="calc__email-label"
+              ></div>
+            </div>
             <div class="order-btn-container order-btn-container_calc">
-              <button class="order-btn">
-                Получить расчёт и план
-              </button>
+              <button class="order-btn">Получить расчёт и план</button>
               <div class="order-btn-shadow"></div>
             </div>
           </form>
@@ -307,9 +336,7 @@
           </div>
           <div class="stats__element">
             <div class="order-btn-container">
-              <button class="order-btn">
-                Получить расчёт и план
-              </button>
+              <button class="order-btn">Получить расчёт и план</button>
               <div class="order-btn-shadow"></div>
             </div>
           </div>
@@ -323,8 +350,12 @@
           Поможем открыть успешную пиццерию в любом регионе
         </h1>
         <div class="slider__container">
-          <button class="slider__prev"><img src="./img/icons/arrow.svg" alt=""></button>
-          <button class="slider__next"><img src="./img/icons/arrow.svg" alt=""></button>
+          <button class="slider__prev">
+            <img src="./img/icons/arrow.svg" alt="" />
+          </button>
+          <button class="slider__next">
+            <img src="./img/icons/arrow.svg" alt="" />
+          </button>
         </div>
       </section>
       <div class="container">
@@ -364,9 +395,7 @@
         </div>
 
         <div class="order-btn-container order-btn-container_cities">
-          <button class="order-btn">
-            Получить расчёт и план
-          </button>
+          <button class="order-btn">Получить расчёт и план</button>
           <div class="order-btn-shadow"></div>
         </div>
       </div>
@@ -384,32 +413,51 @@
           на прибыль 439 000 ₽/месяц для вашего города
         </h1>
         <div class="contact-block-top__form">
-          <form action="" class="contact-form">
+          <form action="" class="contact-form" id="contact-form-top">
             <h2 class="contact-form__title">
               Оставьте заявку <br />
               и получите Бизнес-план
             </h2>
             <div class="contact-form__inputs">
-              <input
-                type="text"
-                class="contact-form__input"
-                placeholder="Ваше имя"
-              />
-              <input
-                type="text"
-                class="contact-form__input"
-                placeholder="Ваш телефон"
-              />
-              <input
-                type="text"
-                class="contact-form__input"
-                placeholder="Ваш e-mail"
-              />
+              <div class="contact-form__input-box">
+                <input
+                  type="text"
+                  class="contact-form__input"
+                  placeholder="Ваше имя"
+                  id="contact-form-top__name-input"
+                />
+                <div
+                  class="contact-form__error-msg contact-form__error-msg_invisible"
+                  id="contact-form-top__name-label"
+                ></div>
+              </div>
+              <div class="contact-form__input-box">
+                <input
+                  type="text"
+                  class="contact-form__input"
+                  placeholder="Ваш телефон"
+                  id="contact-form-top__phone-input"
+                />
+                <div
+                  class="contact-form__error-msg contact-form__error-msg_invisible"
+                  id="contact-form-top__phone-label"
+                ></div>
+              </div>
+              <div class="contact-form__input-box">
+                <input
+                  type="text"
+                  class="contact-form__input"
+                  placeholder="Ваш e-mail"
+                  id="contact-form-top__email-input"
+                />
+                <div
+                  class="contact-form__error-msg contact-form__error-msg_invisible"
+                  id="contact-form-top__email-label"
+                ></div>
+              </div>
             </div>
             <div class="order-btn-container order-btn-container_contact-form">
-              <button class="order-btn">
-                Получить расчёт и план
-              </button>
+              <button class="order-btn">Получить расчёт и план</button>
               <div class="order-btn-shadow"></div>
             </div>
             <p class="contact-form__text">
@@ -476,9 +524,7 @@
               </div>
             </div>
             <div class="order-btn-container order-btn-container_format">
-              <button class="order-btn">
-                Получить расчёт и план
-              </button>
+              <button class="order-btn">Получить расчёт и план</button>
               <div class="order-btn-shadow"></div>
             </div>
           </div>
@@ -531,9 +577,7 @@
               </div>
             </div>
             <div class="order-btn-container order-btn-container_format">
-              <button class="order-btn">
-                Получить расчёт и план
-              </button>
+              <button class="order-btn">Получить расчёт и план</button>
               <div class="order-btn-shadow"></div>
             </div>
           </div>
@@ -587,9 +631,7 @@
           </div>
         </div>
         <div class="order-btn-container order-btn-container_steps">
-          <button class="order-btn">
-            Получить расчёт и план
-          </button>
+          <button class="order-btn">Получить расчёт и план</button>
           <div class="order-btn-shadow"></div>
         </div>
       </div>
@@ -663,9 +705,7 @@
               наполнять их качественным контентом.
             </div>
             <div class="order-btn-container order-btn-container_support">
-              <button class="order-btn">
-                Получить расчёт и план
-              </button>
+              <button class="order-btn">Получить расчёт и план</button>
               <div class="order-btn-shadow"></div>
             </div>
           </div>
@@ -680,8 +720,15 @@
           приложению PIZZAWOOD
         </h1>
         <div class="mobile__app-links">
-          <img src="./img/app-store.png" alt="" class="mobile__app-store" />
-          <img src="./img/google-play.png" alt="" class="mobile__google-play" />
+          <a href="#"
+            ><img src="./img/app-store.png" alt="" class="mobile__app-store"
+          /></a>
+          <a href="#"
+            ><img
+              src="./img/google-play.png"
+              alt=""
+              class="mobile__google-play"
+          /></a>
         </div>
         <div class="mobile__wrapper">
           <div class="mobile__text-block">
@@ -740,32 +787,51 @@
             </h1>
             <h1 class="contact-block-bottom__third-title">для вашего города</h1>
           </div>
-          <form action="" class="contact-form">
+          <form action="" class="contact-form" id="contact-form-bottom">
             <h2 class="contact-form__title">
               Оставьте заявку <br />
               и получите Бизнес-план
             </h2>
             <div class="contact-form__inputs">
-              <input
-                type="text"
-                class="contact-form__input"
-                placeholder="Ваше имя"
-              />
-              <input
-                type="text"
-                class="contact-form__input"
-                placeholder="Ваш телефон"
-              />
-              <input
-                type="text"
-                class="contact-form__input"
-                placeholder="Ваш e-mail"
-              />
+              <div class="contact-form__input-box">
+                <input
+                  type="text"
+                  class="contact-form__input"
+                  placeholder="Ваше имя"
+                  id="contact-form-bottom__name-input"
+                />
+                <div
+                  class="contact-form__error-msg contact-form__error-msg_invisible"
+                  id="contact-form-bottom__name-label"
+                ></div>
+              </div>
+              <div class="contact-form__input-box">
+                <input
+                  type="text"
+                  class="contact-form__input"
+                  placeholder="Ваш телефон"
+                  id="contact-form-bottom__phone-input"
+                />
+                <div
+                  class="contact-form__error-msg contact-form__error-msg_invisible"
+                  id="contact-form-bottom__phone-label"
+                ></div>
+              </div>
+              <div class="contact-form__input-box">
+                <input
+                  type="text"
+                  class="contact-form__input"
+                  placeholder="Ваш e-mail"
+                  id="contact-form-bottom__email-input"
+                />
+                <div
+                  class="contact-form__error-msg contact-form__error-msg_invisible"
+                  id="contact-form-bottom__email-label"
+                ></div>
+              </div>
             </div>
             <div class="order-btn-container order-btn-container_contact-form">
-              <button class="order-btn">
-                Получить расчёт и план
-              </button>
+              <button class="order-btn">Получить расчёт и план</button>
               <div class="order-btn-shadow"></div>
             </div>
             <p class="contact-form__text">
@@ -790,22 +856,23 @@
             >
           </div>
           <div class="footer__mobile-block">
-            <img
-              src="./img/app-store.png"
-              alt=""
-              class="footer__app-store"
-            /><img
-              src="./img/google-play.png"
-              alt=""
-              class="footer__google-play"
-            />
+            <a href="#">
+              <img src="./img/app-store.png" alt="" class="footer__app-store" />
+            </a>
+            <a href="#">
+              <img
+                src="./img/google-play.png"
+                alt=""
+                class="footer__google-play"
+              />
+            </a>
             <div class="footer__mobile-text">
               Cкачать приложение <br />
               PizzaWood
             </div>
           </div>
           <div class="footer__phone-block">
-            <div class="footer__phone">8 800 000 00 00</div>
+            <a class="footer__phone" href="tel:+880000000">8 800 000 00 00</a>
             <div class="footer__phone-text">Бесплатная консультация</div>
           </div>
         </div>
