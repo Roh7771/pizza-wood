@@ -51,7 +51,7 @@ nextBtnEl.addEventListener('click', () => {
   containerEl.append(imageElList[imgToAppendIndex]);
   setTimeout(() => {
     imageElList[imgToAppendIndex].className = 'slider__slide-3';
-  }, 0);
+  }, 50);
 
   // Сместили левый и тут же удалили
   let leftImgIndex = centralImgIndex - 1;
@@ -95,7 +95,7 @@ prevBtnEl.addEventListener('click', () => {
   containerEl.append(imageElList[imgToAppendIndex]);
   setTimeout(() => {
     imageElList[imgToAppendIndex].className = 'slider__slide-1';
-  }, 0);
+  }, 50);
 
   // Сместили правый и тут же удалили
   let rightImgIndex = centralImgIndex + 1;
